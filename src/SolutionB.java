@@ -14,6 +14,8 @@ class Fish extends swimmable{
     private String color;
     private String speciality;
 
+    Fish(){}
+
     Fish(Size size, String color, String speciality) {
         this.size = size;
         this.color = color;

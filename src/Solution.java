@@ -53,6 +53,8 @@ class Parrot extends Bird{
 
     private String song;
 
+    Parrot(){}
+
     Parrot(String song){
         this.song = song;
     }
