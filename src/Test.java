@@ -1,3 +1,5 @@
+/*
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -11,3 +13,5 @@ public class Test {
         assertEquals(0, bird.sing(), "I am Singing");
     }
 }
+
+*/
