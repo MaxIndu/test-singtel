@@ -43,6 +43,16 @@ class Fish extends swimmable{
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Fish{");
+        sb.append("size=").append(size);
+        sb.append(", color='").append(color).append('\'');
+        sb.append(", speciality='").append(speciality).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
 
 class Clownfish extends Fish {
@@ -58,14 +68,17 @@ class Shark extends Fish {
 }
 
 // B.3
-class dolphin extends swimmable{
+class Dolphin extends swimmable{
     // Inherits only swim avoid other behaviours and properties from the Fish
 }
 
 
 public class SolutionB {
     public static void main(String[] args) {
-
+        Clownfish clownfish = new Clownfish();
+        System.out.println(clownfish);
+        Shark shark = new Shark();
+        System.out.println(shark);
     }
 }
 
